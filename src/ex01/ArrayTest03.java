@@ -18,13 +18,13 @@ public class ArrayTest03 {
 
 	private static String getYoil() {
 		String [] y = new String[] {
-				"월", "화", "수", "목", "금", "토", "일"
+				"月", "火", "水", "木", "金", "土", "日"
 		};
 		
 		LocalDate now = LocalDate.now();
 		int wk = now.getDayOfWeek().getValue(); // 1(월)~7(일)
 		String yoil = y[ wk -1 ];
-		return yoil + "요일";
+		return yoil + "曜日";
 		}
 
 }
